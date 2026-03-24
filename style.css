@@ -1,0 +1,84 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family: 'Segoe UI', Arial;
+}
+
+body{
+    height:100vh;
+    background:url("https://scontent.fjrs10-1.fna.fbcdn.net/v/t39.30808-6/487215188_641711075686900_6199935221240520886_n.jpg?_nc_cat=103&ccb=1-7&_nc_sid=1d70fc&_nc_ohc=zjOUJMJ0atwQ7kNvwHdttGG&_nc_oc=AdralY3Lrfv5adf05tDxwxXOV5pQgnGADW31uuisDiKdErMTc3wOVN8G1VRWHm7JX9s&_nc_zt=23&_nc_ht=scontent.fjrs10-1.fna&_nc_gid=FlYfoKV4vRop6tLFGKlEGA&_nc_ss=7a32e&oh=00_AfxYKC9hAI0VHsk_xh6vl936apTv81UlObdT7_8WTp-D3g&oe=69C8C92E.jpg") no-repeat center/cover;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    color:white;
+}
+
+.overlay{
+    position:fixed;
+    width:100%;
+    height:100%;
+    background:rgba(0,0,0,0.65);
+    z-index:-1;
+}
+
+.container{
+    text-align:center;
+    backdrop-filter: blur(10px);
+    padding:30px;
+    border-radius:20px;
+    background:rgba(255,255,255,0.05);
+    box-shadow:0 0 30px rgba(0,0,0,0.5);
+}
+
+.profile{
+    width:130px;
+    height:130px;
+    border-radius:50%;
+    border:4px solid white;
+    margin-bottom:15px;
+}
+
+h1{
+    font-size:28px;
+    margin-bottom:5px;
+}
+
+.title{
+    opacity:0.8;
+    margin-bottom:20px;
+}
+
+.buttons{
+    width:250px;
+    margin:auto;
+}
+
+.btn{
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    margin:10px 0;
+    padding:12px;
+    border-radius:12px;
+    text-decoration:none;
+    color:white;
+    font-weight:bold;
+    transition:0.3s;
+}
+
+.icon{
+    width:16px;
+    height:16px;
+    margin-right:6px;
+}
+
+.facebook{ background:#1877f2; }
+.instagram{ background:#e1306c; }
+.snapchat{ background:#FFFC00; color:#000; }
+.whatsapp{ background:#25d366; }
+
+.btn:hover{
+    transform:scale(1.08);
+    box-shadow:0 0 15px rgba(255,255,255,0.5);
+}
